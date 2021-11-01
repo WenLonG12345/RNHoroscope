@@ -33,6 +33,6 @@ const HoroscopeReducer = (state = initialState, action) => {
 }
 
 export const rootReducer = combineReducers({
-    app: HoroscopeReducer
+    horoscope: HoroscopeReducer
 })
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RNHoroscopeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNHoroscopeTests.m */; };
+		0FD2860A61DA40E38848F9B3 /* averta.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F44CF7031F64E4A8AC0C572 /* averta.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -37,6 +38,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNHoroscope/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNHoroscope/main.m; sourceTree = "<group>"; };
 		3CFFBC2BDF2D166C0C3B44C0 /* Pods-RNHoroscope.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNHoroscope.release.xcconfig"; path = "Target Support Files/Pods-RNHoroscope/Pods-RNHoroscope.release.xcconfig"; sourceTree = "<group>"; };
+		3F44CF7031F64E4A8AC0C572 /* averta.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = averta.ttf; path = ../src/assets/fonts/averta.ttf; sourceTree = "<group>"; };
 		444EF9BEF8B5AB14630C50E8 /* Pods-RNHoroscope.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNHoroscope.debug.xcconfig"; path = "Target Support Files/Pods-RNHoroscope/Pods-RNHoroscope.debug.xcconfig"; sourceTree = "<group>"; };
 		5623971F29E48CF0411FE21E /* libPods-RNHoroscope.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNHoroscope.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DEB530B7B98D6FAA3AD341 /* Pods-RNHoroscope-RNHoroscopeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNHoroscope-RNHoroscopeTests.release.xcconfig"; path = "Target Support Files/Pods-RNHoroscope-RNHoroscopeTests/Pods-RNHoroscope-RNHoroscopeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				8A25C663F7AF9B76FE384523 /* Pods */,
+				C26A5B345F4E4508AAB57027 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -145,8 +148,15 @@
 				C0484484ECEBB805A2FD65D1 /* Pods-RNHoroscope-RNHoroscopeTests.debug.xcconfig */,
 				69DEB530B7B98D6FAA3AD341 /* Pods-RNHoroscope-RNHoroscopeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C26A5B345F4E4508AAB57027 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F44CF7031F64E4A8AC0C572 /* averta.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +255,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				0FD2860A61DA40E38848F9B3 /* averta.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
