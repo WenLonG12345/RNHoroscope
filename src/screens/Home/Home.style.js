@@ -9,7 +9,7 @@ export default StyleSheet.create({
     },
     cardContainer: {
         flex: 1, 
-        width: '90%'
+        width: '90%',
     },
     card: {
         backgroundColor: "#9DD1E9",

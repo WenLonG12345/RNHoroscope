@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
         marginBottom: 10
     },
     text: {
-        fontSize: 18
+        fontSize: 18,
+        color: 'black'
     },
     chip: {
         borderRadius: 20,
@@ -34,7 +35,8 @@ const styles = StyleSheet.create({
         marginTop: 10
     },
     chipText: {
-        fontSize: 12
+        fontSize: 12,
+        color: 'black'
     }
 })
 

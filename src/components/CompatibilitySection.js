@@ -52,10 +52,10 @@ const CompatibilitySection = ({ originalTitle, compatTitle }) => {
                 </View>
 
                 <Image source={LoveIcon} style={styles.loveIcon} />
-                <View style={styles.card(compat.backgroundColor)}>
-                    <Image source={compat.url} style={styles.horoIcon} />
-                    <Text>{compat.title}</Text>
-                    <Text>{compat.date}</Text>
+                <View style={styles.card(compat?.backgroundColor)}>
+                    <Image source={compat?.url} style={styles.horoIcon} />
+                    <Text>{compat?.title}</Text>
+                    <Text>{compat?.date}</Text>
                 </View>
             </View>
 

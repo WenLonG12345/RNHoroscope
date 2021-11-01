@@ -1,4 +1,5 @@
 import React from 'react'
+import { StatusBar } from 'react-native';
 import { SafeAreaView, Text, View, FlatList } from 'react-native';
 import styles from './Home.style';
 import horoscopeList from '../../utils/constant';
@@ -8,7 +9,8 @@ const Home = () => {
 
     return (
         <SafeAreaView style={styles.container}>
-            <Text>Choose a Sign</Text>
+            <StatusBar backgroundColor='#eeeeee' barStyle='dark-content'/>
+            <Text style={{ fontSize: 20, fontWeight: '500' }}>Choose a Sign</Text>
 
             <View style={styles.cardContainer}>
                 <FlatList

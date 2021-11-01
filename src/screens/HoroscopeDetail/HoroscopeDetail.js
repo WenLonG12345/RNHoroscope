@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, Image, SafeAreaView, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, Image, SafeAreaView, TouchableOpacity, ScrollView, StatusBar } from 'react-native';
 import { connect } from 'react-redux';
 import CompatibilitySection from '../../components/CompatibilitySection';
 import DateSelector from '../../components/DateSelector';
@@ -29,6 +29,7 @@ const HoroscopeDetail = ({ route, horoscopeModel, navigation, dispatch }) => {
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: selectedHoroscope.backgroundColor }}>
+            <StatusBar backgroundColor={selectedHoroscope.backgroundColor}/>
             <ScrollView>
                 <View style={styles.container}>
                     <View style={styles.iconContainer(selectedHoroscope.backgroundColor)}>
