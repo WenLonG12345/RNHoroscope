@@ -22,22 +22,30 @@ const styles = StyleSheet.create({
         marginBottom: 10
     },
     text: {
+        fontSize: 18
+    },
+    chip: {
+        borderRadius: 20,
+        borderColor: 'black',
+        borderWidth: 1,
+        backgroundColor: 'transparent',
+        paddingVertical: 5,
+        paddingHorizontal: 10,
+        marginTop: 10
+    },
+    chipText: {
+        fontSize: 12
     }
 })
 
 const HoroscopeCard = ({ horoscope }) => {
 
     const navigation = useNavigation();
-    const dispatch = useDispatch();
 
     return (
         <TouchableOpacity
             style={styles.container(horoscope.backgroundColor)}
             onPress={() => {
-                // dispatch(horoscopeRequest({
-                //     sign: horoscope.title.toLowerCase(),
-                //     day: 'today'
-                // }))
                 navigation.navigate('Details', {
                     horoscope: horoscope
                 })
@@ -45,6 +53,9 @@ const HoroscopeCard = ({ horoscope }) => {
         >
             <Image source={horoscope.url} style={styles.image} />
             <Text style={styles.text}>{horoscope.title}</Text>
+            <View style={styles.chip}>
+                <Text style={styles.chipText}>{horoscope.date}</Text>
+            </View>
         </TouchableOpacity>
     )
 };
